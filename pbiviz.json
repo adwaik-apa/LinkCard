@@ -1,0 +1,27 @@
+{
+  "visual": {
+    "name": "linkCard",
+    "displayName": "Link Card",
+    "guid": "linkCard9F4A413A192D416C8BD1E0763B2DEE93",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "Link Card For PowerBI",
+    "supportUrl": "https://github.com/adwaik-apa/LinkCard/issues",
+    "gitHubUrl": "https://github.com/adwaik-apa/LinkCard"
+  },
+  "apiVersion": "1.12.0",
+  "author": {
+    "name": "A.Dwaik",
+    "email": "adwaik@apa.org"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

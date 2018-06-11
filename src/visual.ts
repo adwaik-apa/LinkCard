@@ -35,6 +35,7 @@ module powerbi.extensibility.visual {
         private linkColor:string;
         private linkHoverColor:string;
         private link:string;
+
         constructor(options: VisualConstructorOptions) {
             this.host = options.host;
             this.target = options.element;
@@ -65,7 +66,7 @@ module powerbi.extensibility.visual {
             });
 
             element.addEventListener('mouseout',()=>{
-                //Reset Link Color When Mouse Leav : Default Link Color
+                //Reset Link Color When Mouse Leave : Default Link Color
                 this.linkElement.style.color = this.linkColor;
             });
 
@@ -87,7 +88,7 @@ module powerbi.extensibility.visual {
 
             //Update Element Properties:
             if(typeof this.linkElement != "undefined"){
-                this.linkElement.textContent = this.settings.stylePoint.linkText;
+                this.linkElement.textContent = this.settings.stylePoint.actualLink? this.link:this.settings.stylePoint.linkText;
                 this.linkElement.title = this.settings.stylePoint.linkHint;
                 this.linkElement.style.fontSize = this.settings.stylePoint.fontSize+"px";
                 this.linkElement.style.textDecoration = this.settings.stylePoint.underLine ? "underline":"none";

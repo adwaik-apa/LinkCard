@@ -33,13 +33,14 @@ module powerbi.extensibility.visual {
       }
 
     export class stylePointSettings {
-      public linkText:string = "Clik Here";
+      public linkText:string = "Click Here";
       public linkHint:string = "Click here to open the link ...";
       public fontSize:number = 14;
       public linkColor:string = "dodgerblue";
       public linkHoverColor:string = "orange";
       public underLine:boolean = true;
       public alignment:string = "center";
+      public actualLink:boolean = false;
      }
 
 }

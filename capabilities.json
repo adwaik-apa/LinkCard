@@ -63,6 +63,12 @@
                             "alignment": true
                         }
                     }
+                },
+                "actualLink":{
+                    "displayName": "Show Actual Link",
+                    "type": {
+                        "bool": true
+                    }
                 }
                
             }
